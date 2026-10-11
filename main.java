@@ -1,0 +1,34 @@
+
+class Calculator {
+    int a = 10;
+    int b = 5;
+
+    void addition() {
+        System.out.println("Addition: " + (a + b));
+    }
+
+    void subtraction() {
+        System.out.println("Subtraction: " + (a - b));
+    }
+}
+
+class AdvancedCalculator extends Calculator {
+    void multiplication() {
+        System.out.println("Multiplication: " + (a * b));
+    }
+
+    void division() {
+        System.out.println("Division: " + (a / b));
+    }
+}
+
+class Main {
+    public static void main(String[] args) {
+        AdvancedCalculator obj = new AdvancedCalculator();
+
+        obj.addition();
+        obj.subtraction();
+        obj.multiplication();
+        obj.division();
+    }
+}
